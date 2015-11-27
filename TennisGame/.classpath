@@ -2,7 +2,7 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/Users/pe2176.LANCSE/Downloads/hamcrest-core-1.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/pe2176.LANCSE/Downloads/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="/home/alessandro/git/CodeTest_Poggi_2015-11-26/TennisGame/lib/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="/home/alessandro/git/CodeTest_Poggi_2015-11-26/TennisGame/lib/junit-4.12.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

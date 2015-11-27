@@ -26,4 +26,9 @@ public class TestGame {
 	        System.out.println("Test Score");
 	        assertTrue(p1.getCurrentScore()==Score.LOVE && p2.getCurrentScore()==Score.LOVE);
 	    }
+	 @Test
+	    public void TestSimulate() {
+	        System.out.println("Test Score");
+	       game.simulate();
+	    }
 }

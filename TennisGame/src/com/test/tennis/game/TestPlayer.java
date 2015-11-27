@@ -22,10 +22,8 @@ Player player;
 	 }
 	 @Test
 	  public void TestScores() {
-		for(Score s : Score.values()){
-			player.setCurrentScore(s);
-				assertEquals(s,player.getCurrentScore());
-		}
+			player.setCurrentScore(Score.LOVE);
+				assertEquals(Score.LOVE,player.getCurrentScore());
 	 }
 	 
 }

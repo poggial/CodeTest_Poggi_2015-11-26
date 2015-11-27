@@ -3,19 +3,11 @@ package com.tennis.game.enumerator;
 public enum Score {
 	LOVE{
 		@Override
-		public int getIntValue() {
-			return 0;
-		}
-		@Override
 		public String getDescription(){
 			return "love";
 		}
 	},
 	FIFTEEN{
-		@Override
-		public int getIntValue() {
-			return 15;
-		}
 		@Override
 		public String getDescription(){
 			return "fifteen";
@@ -23,22 +15,26 @@ public enum Score {
 	},
 	THIRTY{
 		@Override
-		public int getIntValue() {
-			return 30;
-		}
-		@Override
 		public String getDescription(){
 			return "thirty";
 		}
 	},
 	FORTY{
 		@Override
-		public int getIntValue() {
-			return 40;
-		}
-		@Override
 		public String getDescription(){
 			return "forty";
+		}
+	},
+	DEUCE{
+		@Override
+		public String getDescription(){
+			return "deuce";
+		}
+	},
+	ADVANTAGE{
+		@Override
+		public String getDescription(){
+			return "advantage";
 		}
 	}
 	;
@@ -47,8 +43,5 @@ public enum Score {
 	
 	public String getDescription() {
 		return null;
-	}
-	public int getIntValue(){
-		return -1;
 	}
 }
