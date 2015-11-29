@@ -13,7 +13,6 @@ public class Initial implements IGame {
 	}
 	@Override
 	public IGame nextState(Player point) {
-		// TODO Auto-generated method stub
 		if(Score.FORTY==p1.getCurrentScore() && Score.FORTY==p2.getCurrentScore()){
 			//parità
 			return new Deuce(p1,p2);
@@ -28,7 +27,8 @@ public class Initial implements IGame {
 
 	@Override
 	public boolean isOver() {
-		// TODO Auto-generated method stub
+		System.out.println(p1.getName() + " " + p1.getCurrentScore().getDescription() + " - "
+				+ p2.getCurrentScore().getDescription() + " " + p2.getName());
 		return false;
 	}
 

@@ -16,8 +16,8 @@ public class TestGame {
 	 Player p2;
 	 @Before
 	    public void initialize() {
-	        p1 = new Player("Player1");
-	        p2 = new Player("Player2");
+	        p1 = new Player("Djokovic");
+	        p2 = new Player("Nadal");
 	        game = new Game(p1, p2);
 	    }
 
