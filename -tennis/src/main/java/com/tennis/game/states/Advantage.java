@@ -14,7 +14,6 @@ public class Advantage implements IGame {
 		this.player.setCurrentScore(Score.FORTY);
 	}
 
-	@Override
 	public IGame nextState(Player point) {
 		if (point == advantage) {
 			return new Over(advantage, player);
@@ -32,7 +31,6 @@ public class Advantage implements IGame {
 		return Score.ADVANTAGE.getDescription() + " " + advantage.getName();
 	}
 
-	@Override
 	public Player winner() {
 		return null;
 	}

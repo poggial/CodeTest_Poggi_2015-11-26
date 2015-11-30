@@ -14,7 +14,6 @@ public class Initial implements IGame {
 		this.p2.setCurrentScore(Score.LOVE);
 	}
 
-	@Override
 	public IGame nextState(Player point) {
 		if (Score.FORTY == p1.getCurrentScore() && Score.FORTY == p2.getCurrentScore()) {
 			// parità
@@ -34,7 +33,6 @@ public class Initial implements IGame {
 				+ p2.getCurrentScore().getDescription() + " " + p2.getName();
 	}
 
-	@Override
 	public Player winner() {
 		return null;
 	}

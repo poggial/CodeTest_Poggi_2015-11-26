@@ -1,4 +1,4 @@
-package com.test.tennis.game;
+package com.tennis.app;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;

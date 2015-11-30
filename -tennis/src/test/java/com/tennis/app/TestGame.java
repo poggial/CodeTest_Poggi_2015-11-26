@@ -1,4 +1,4 @@
-package com.test.tennis.game;
+package com.tennis.app;
 
 //import static org.hamcrest.*;
 //import static org.junit.Assert.assertEquals;

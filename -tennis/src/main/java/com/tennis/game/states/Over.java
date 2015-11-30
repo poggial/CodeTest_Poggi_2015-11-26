@@ -11,7 +11,6 @@ public class Over implements IGame {
 		this.loser = loser;
 	}
 
-	@Override
 	public IGame nextState(Player point) {
 		// maybe null
 
@@ -25,7 +24,6 @@ public class Over implements IGame {
 		return "Game Finished: " + winner.getName() + " win!!";
 	}
 
-	@Override
 	public Player winner() {
 		return winner;
 	}

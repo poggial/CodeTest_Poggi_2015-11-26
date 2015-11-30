@@ -2,10 +2,8 @@ package com.tennis.game.controller;
 
 import com.tennis.game.enumerator.Score;
 import com.tennis.game.interfaces.IGame;
-import com.tennis.game.interfaces.IGameView;
 import com.tennis.game.models.Player;
 import com.tennis.game.states.Initial;
-import com.tennis.game.states.Over;
 
 public class GameController {
 	private Player player1;

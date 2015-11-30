@@ -14,7 +14,6 @@ public class Deuce implements IGame {
 		this.player2.setCurrentScore(Score.FORTY);
 	}
 
-	@Override
 	public IGame nextState(Player point) {
 		if (point == player1) {
 			return new Advantage(player1, player2);
@@ -28,7 +27,6 @@ public class Deuce implements IGame {
 		return Score.DEUCE.getDescription();
 	}
 
-	@Override
 	public Player winner() {
 		return null;
 	}
