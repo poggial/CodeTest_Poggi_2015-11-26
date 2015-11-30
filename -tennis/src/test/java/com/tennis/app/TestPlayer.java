@@ -18,18 +18,18 @@ public class TestPlayer {
 	}
 
 	@Test
-	public void TestNameNotNull() {
+	public void testNameNotNull() {
 
 		assertNotNull(player.getName());
 	}
 	@Test
-	public void TestScoreNotNull() {
+	public void testScoreNotNull() {
 
 		assertNotNull(player.getCurrentScore());
 	}
 	
 	@Test
-	public void TestScores() {
+	public void testScores() {
 		player.setCurrentScore(Score.LOVE);
 		assertEquals(Score.LOVE, player.getCurrentScore());
 		player.setCurrentScore(Score.FIFTEEN);
