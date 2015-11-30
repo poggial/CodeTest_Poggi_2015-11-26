@@ -7,7 +7,6 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.tennis.game.enumerator.Score;
 import com.tennis.game.interfaces.IGame;
 import com.tennis.game.models.Player;
 import com.tennis.game.states.Advantage;
@@ -60,5 +59,5 @@ public class TestStates {
 		assertTrue(advantage.nextState(p1) instanceof Deuce || advantage.nextState(p1) instanceof Over);
 		assertFalse(advantage.isOver());
 	}
-	
+
 }

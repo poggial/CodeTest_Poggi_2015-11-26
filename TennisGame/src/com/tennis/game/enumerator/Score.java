@@ -1,46 +1,43 @@
 package com.tennis.game.enumerator;
 
 public enum Score {
-	LOVE{
+	LOVE {
 		@Override
-		public String getDescription(){
+		public String getDescription() {
 			return "love";
 		}
 	},
-	FIFTEEN{
+	FIFTEEN {
 		@Override
-		public String getDescription(){
+		public String getDescription() {
 			return "fifteen";
 		}
 	},
-	THIRTY{
+	THIRTY {
 		@Override
-		public String getDescription(){
+		public String getDescription() {
 			return "thirty";
 		}
 	},
-	FORTY{
+	FORTY {
 		@Override
-		public String getDescription(){
+		public String getDescription() {
 			return "forty";
 		}
 	},
-	DEUCE{
+	DEUCE {
 		@Override
-		public String getDescription(){
+		public String getDescription() {
 			return "deuce";
 		}
 	},
-	ADVANTAGE{
+	ADVANTAGE {
 		@Override
-		public String getDescription(){
+		public String getDescription() {
 			return "advantage";
 		}
-	}
-	;
+	};
 
-	
-	
 	public String getDescription() {
 		return null;
 	}
