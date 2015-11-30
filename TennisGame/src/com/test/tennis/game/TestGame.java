@@ -5,20 +5,21 @@ import static org.junit.Assert.*;
 
 import org.junit.*;
 
-import com.tennis.game.Game;
-import com.tennis.game.Player;
+import com.tennis.game.controller.GameController;
 import com.tennis.game.enumerator.Score;
+import com.tennis.game.models.Player;
+import com.tennis.game.view.ConsolleView;
 
 
 public class TestGame {
-	Game game;
+	GameController game;
 	 Player p1;
 	 Player p2;
 	 @Before
 	    public void initialize() {
 	        p1 = new Player("Djokovic");
 	        p2 = new Player("Nadal");
-	        game = new Game(p1, p2);
+	        game = new GameController(p1, p2, new ConsolleView(p1, p2));
 	    }
 
 	 @Test
@@ -31,4 +32,5 @@ public class TestGame {
 	        System.out.println("Test Score");
 	       game.simulate();
 	    }
+	 
 }

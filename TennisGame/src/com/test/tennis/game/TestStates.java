@@ -7,12 +7,13 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.tennis.game.Advantage;
-import com.tennis.game.Deuce;
-import com.tennis.game.IGame;
-import com.tennis.game.Initial;
-import com.tennis.game.Over;
-import com.tennis.game.Player;
+import com.tennis.game.enumerator.Score;
+import com.tennis.game.interfaces.IGame;
+import com.tennis.game.models.Player;
+import com.tennis.game.states.Advantage;
+import com.tennis.game.states.Deuce;
+import com.tennis.game.states.Initial;
+import com.tennis.game.states.Over;
 
 public class TestStates {
 	Player p1;
@@ -59,5 +60,5 @@ public class TestStates {
 		assertTrue(advantage.nextState(p1) instanceof Deuce || advantage.nextState(p1) instanceof Over);
 		assertFalse(advantage.isOver());
 	}
-
+	
 }
