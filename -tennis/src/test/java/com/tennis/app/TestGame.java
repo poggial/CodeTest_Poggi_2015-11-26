@@ -1,6 +1,7 @@
 package com.tennis.app;
 
 import org.junit.Before;
+import org.junit.Test;
 
 import com.tennis.game.controller.GameController;
 import com.tennis.game.enumerator.Score;
@@ -18,12 +19,12 @@ public class TestGame {
 		p2 = new Player("Nadal");
 		game = new GameController(p1, p2);
 	}
-
+	@Test
 	public void testStartScore() {
 		System.out.println("Test Score");
 		assertTrue(p1.getCurrentScore() == Score.LOVE && p2.getCurrentScore() == Score.LOVE);
 	}
-
+	@Test
 	public void testSimulate() {
 		System.out.println("Test Score");
 		game.simulate();
