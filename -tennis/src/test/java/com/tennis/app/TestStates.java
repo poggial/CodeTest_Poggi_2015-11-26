@@ -37,7 +37,7 @@ public class TestStates {
 	public void TestOverState() {
 		System.out.println("Test Over State");
 		IGame over = new Over(p1, p2);
-		assertNotNull(over.nextState(p1));
+		assertTrue(over.nextState(p1)==null);
 		assertTrue(over.winner()!=null);
 	}
 
